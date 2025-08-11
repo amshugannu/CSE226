@@ -13,7 +13,7 @@
         android:theme="@style/Theme.CSE226"
         tools:targetApi="35">
         <activity
-            android:name=".CustomListView"
+            android:name=".GridView"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +22,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CustomListView"
+            android:exported="true"/>
+        <activity
             android:name=".CustomListItems"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
