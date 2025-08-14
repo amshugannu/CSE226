@@ -15,18 +15,13 @@ class GridView : AppCompatActivity() {
         setContentView(R.layout.activity_grid_view)
 
         val items = listOf(
-            GridDataitem( "Apple",R.drawable.lpulogo),
-            GridDataitem( "Banana",R.drawable.lpulogo),
-            GridDataitem( "Orange",R.drawable.lpulogo),
-            GridDataitem( "Pineapple",R.drawable.lpulogo),
-            GridDataitem( "Mango",R.drawable.lpulogo),
-            GridDataitem( "Cherry",R.drawable.lpulogo),
-            GridDataitem( "Kiwi",R.drawable.lpulogo),
-            GridDataitem( "Water Melon",R.drawable.lpulogo),
-            GridDataitem( "Grapes",R.drawable.lpulogo),
+            GridDataitem( "Apple",R.drawable.apple),
+            GridDataitem( "Banana",R.drawable.banana),
+            GridDataitem( "Orange",R.drawable.orange),
+            GridDataitem( "Mango",R.drawable.mango),
         )
 
-        val gridView = findViewById<GridView>(R.id.grid_view)
+        val gridView = findViewById<GridView>(R.id.myGrid)
         gridView.numColumns = 2
         gridView.adapter = GridAdapter(items)
     }
